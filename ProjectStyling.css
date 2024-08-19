@@ -1,0 +1,79 @@
+
+nav {
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    color: white;
+    left: 0px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    overflow-x: hidden;
+    justify-content: center; /* Center the nav horizontally */
+    align-items: center; /* Center the nav vertically */
+    z-index: 1000; /* Ensure the nav stays above other content */
+
+}
+
+
+nav ul {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the list items */
+    overflow-x: hidden;
+}
+
+nav ul li{
+    justify-content: center;
+    padding: 15px;
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    /* overflow-x: hidden;*/
+    position: center;
+    right: 100px;
+    margin: 0 70px; /* Adjust as needed */
+}
+
+
+nav ul li a{
+    padding: 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    position: center;
+    justify-content: center;
+    right: 100px;
+
+}
+
+nav .logo {
+    width: 60px;
+
+}
+nav li a:hover {
+    color: rgba(214, 214, 255, 0.952);
+    text-align:center;
+    background-color: rgba(12,3,51,0.3);
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        height: auto;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+}

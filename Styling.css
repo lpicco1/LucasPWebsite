@@ -1,0 +1,193 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+/* Style the top navigation bar */
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #101010;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 22px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+
+  }
+  .topnavr a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnavr a:hover {
+    transition-duration: 500ms, 500ms, 500ms;
+    color: #6e6e6e;
+    /*color: black;*/
+  }
+  .topnav a:hover {
+    transition-duration: 500ms, 500ms, 500ms;
+    color: #6e6e6e;
+    /*color: black;*/
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .fixed-bg, .fixed-bg2, .fixed-bg3, .fixed-bg4, .fixed-bg5, .fixed-bg6 {
+    min-height: 1200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .fixed-bg{
+    background-image: url("Photos&Videos/LAPSunsetfishing_hq_Original.JPG");
+    z-index: -1;
+  }
+  .fixed-bg2 {
+    background-image: url("Photos&Videos/XCMain.JPG");
+  }
+  .fixed-bg3 { 
+    background-image: url("Photos&Videos/Calpai.JPG");
+  }
+  .fixed-bg4 {
+    background-image: url("Photos&Videos/compsciBG.jpg");
+  }
+  .fixed-bg5 {
+    background-image: url("Photos&Videos/pianobg2.jpg");
+  }
+  .fixed-bg6 {
+    background-image: url("Photos&Videos/purpflow.JPG");
+  }
+  .fixed-bg7 {
+    background-image: url("Photos&Videos/purpflow.JPG");
+  }
+
+
+  .bg-text {
+    color: rgb(255, 255, 255);
+    font-weight: 20px;
+    font-size: 80px;
+    font-family: Brush Script MT, cursive;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+  .content {
+    padding: 20px 30px;
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    color: rgb(189, 189, 189);
+    font-weight: 20px;
+    font-size: 20px;
+    border: 2px solid #000000;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 800px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 800px) {
+    .bg-text {
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+
+    }
+
+}
+
+.scrolld {
+    height: 40vh;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .scrolld::before {
+    animation: bounce 1.5s ease infinite;
+    bottom: 2rem;
+    color: #fff;
+    content: '╲╱';
+    font-size: 2rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 1rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-15%);
+    }
+  }
+
+  .scrollw {
+    height: 40vh;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .scrollw::before {
+    animation: bounce 1.5s ease infinite;
+    bottom: 8rem;
+    color: #fff;
+    content: 'scroll down';
+    font-size: 2rem;
+    height: 2rem;
+    left: 50%;
+    letter-spacing:  1px;
+    line-height: 1rem;
+    margin-left: -4rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 8rem;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-15%);
+    }
+  }
+  .ABME p { 
+    margin-top: -250px;
+    margin-left: -1300px;
+    background-color: #000000;
+    -: 20px;
+
+
+
+  }

@@ -1,0 +1,266 @@
+
+/* Style the top navigation bar */
+.topnav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #101010;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 22px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+
+  }
+  .topnavr a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnavr a:hover {
+    transition-duration: 500ms, 500ms, 500ms;
+    color: #6e6e6e;
+    /*color: black;*/
+  }
+  .topnav a:hover {
+    transition-duration: 500ms, 500ms, 500ms;
+    color: #6e6e6e;
+    /*color: black;*/
+  }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fffefd;
+}
+
+h1{
+    margin-top: 165px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.774);
+    font-family: Courier, monospace;
+    font-size: 45px;
+
+}
+ h3{
+    margin-top: 0px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.774);
+    font-size: 25px;
+    font-weight: 3px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+ }
+ 
+
+.gallery{
+    margin-top: 100px;
+    width: 90%;
+    columns: 6;
+    column-gap: 11px;
+    padding: 5px;
+    position: absolute;
+    left: 4.5%;
+}
+
+@media screen and (max-width: 950px){
+        
+    .gallery {
+        columns: 5;
+        margin-top: 65px;
+        
+    }
+
+}
+
+@media screen and (max-width: 850px){
+        
+    .gallery {
+        columns: 4;
+        margin-top: 65px;
+        
+    }
+
+}
+
+@media screen and (max-width: 625px){
+        
+    .gallery {
+    margin-top: 50px;
+    columns: 2;
+}
+
+h1{
+    margin-top: 115px;
+}
+
+}
+
+img{
+    width: 100%;
+    margin-bottom: 11px;
+    border-radius: 11px;
+    transition: 0.1s linear;
+}
+
+img:hover{
+   transform: scale(1.05);
+   background-image: rgba(0, 0, 0);
+   
+}
+p {
+    margin-top: 0px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.774);
+    font-size: 22px;
+    font-weight: 1px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+ }
+
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    margin-top: -10%;
+    /*
+    margin-left: 25%;
+    */
+    display: block;
+    width: 60%;
+    max-width: 600px;
+    max-height: 425px; /* Add this line to set the maximum height */
+    object-fit: contain; /* Ensure the image fits within the modal */
+
+  }
+
+  .modal-details {
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgb(255, 255, 255, 0.8); /* Black w/opacity/see-through */
+    border: 5px solid #f1f1f1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: auto;
+    margin-top: 5%;
+    width: 60%;
+    height: 60%;
+    max-height: 100px;
+    max-width: 800px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .modal-details {
+
+        max-height: 150px;
+    }
+}
+
+#watermarkedDownload {
+    margin: 20px auto;
+    display: block;
+    background-color: #67b2e8;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+  /* Caption of Modal Image */
+  #caption {
+    margin: 0;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 100px;
+    z-index: 2;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.1s;
+    animation-name: zoom;
+    animation-duration: 0.1s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+
+  }
+  
+  .close:hover .close:focus {
+    color: #9fcdff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 900px){
+    .modal-content {
+      margin-left: 10%;
+      width: 80%;
+      margin-top: -25%;
+      max-width: 500px;
+    max-height: 400px; /* Add this line to set the maximum height */
+    }
+}
+    @media only screen and (max-width: 700px){
+        .modal-content {
+          margin-left: 10%;
+          width: 80%;
+          margin-top: -30%;
+          max-width: 500px;
+        max-height: 300px; /* Add this line to set the maximum height */
+        }
+
+    .close{
+        top: 15px; 
+    }
+  }
+
+
+
+

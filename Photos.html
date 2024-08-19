@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PhotoStyling.css">
+    <title>Lucas Picco - Photos</title>
+</head>
+
+
+
+<body>
+
+    <script>
+        img = document.getElementById("img");
+        // Function to set image dimensions
+        function enlargeImg() {
+            img.style.width = "60%";
+            img.style.height = "auto";
+            img.style.transition = "width 0.5s ease";
+        }
+        // Function to reset image dimensions
+        function resetImg() {
+            img.style.width = "40%";
+            img.style.height = "auto";
+            img.style.transition = "width 0.5s ease";
+        }
+    </script>
+
+
+
+
+<!---This is the Navigation wiht my links--->
+
+<div class="topnav">
+    <a href="Photos.html"> Photos</a>
+    <a href="https://mkepanthers.com/sports/mens-cross-country/roster/lucas-picco/15834">XC</a>
+    <a href="https://mkepanthers.com/sports/mens-track-and-field/roster/lucas-picco/15497">Track & Field</a>
+    <a href="#">Piano</a>
+    <div class="topnavr">
+    <a href="index.html">Lucas Picco</a>
+    </div>
+  </div>
+
+
+      <div class = "wrapper">
+<h1><span>Photographs</span></h1>
+</div>
+<h3>By Lucas Picco</h3> 
+<p><a href=mailto:lucasapicco@gmail.com?cc=lucasapicco@gmail.com”><span>Inquire</span></a></p>
+<div class = "container">
+    <!-- CR2 files don't work, only jpg or png-->
+     <div class = "gallery">
+
+      <img src="Photos&Videos/IMG_6199.jpg" id = "myImg21">
+      <img src="Photos&Videos/IMG_6265.jpg" id = "myImg22">
+      <img src="Photos&Videos/IMG_6212.jpg" id = "myImg23">
+      <img src="Photos&Videos/IMG_6219.jpg" id = "myImg24">
+      <img src="Photos&Videos/IMG_6245.jpg" id = "myImg25">
+      <img src="Photos&Videos/IMG_6259.jpg" id = "myImg26">
+      <img src="Photos&Videos/IMG_6267.jpg" id = "myImg27">
+        <img src="Photos&Videos/IMG_6118.jpg" id = "myImg14">
+        <img src="Photos&Videos/IMG_6119.jpg" id = "myImg15">
+        <img src="Photos&Videos/IMG_6121.jpg" id = "myImg16">
+        <img src="Photos&Videos/IMG_6122.jpg" id = "myImg17">
+        <img src="Photos&Videos/IMG_6123.jpg" id = "myImg18">
+        <img src="Photos&Videos/IMG_6130.jpg" id = "myImg19">
+        <img src="Photos&Videos/IMG_6140.jpg" id = "myImg20">
+
+        <img src="Photos&Videos/TrackPhotoLucasPicco.JPG" id = "myImg1" alt="running">
+        <img src="Photos&Videos/fountbench.JPG" id = "myImg2" alt = "track">
+        <img src="Photos&Videos/bench.JPG" id = "myImg3" >
+        <img src="Photos&Videos/oflowr.JPG" id = "myImg4" >
+        <img src="Photos&Videos/outpath.JPG" id = "myImg5">
+        <img src="Photos&Videos/purpflow.JPG" id = "myImg6">
+        <img src="Photos&Videos/FC9AC96E-925F-4485-A4A1-C3F2B15F462F.jpg" id = "myImg7">
+        <img src="Photos&Videos/wdpath1.JPG" id = "myImg8">
+        <img src="Photos&Videos/wdpath2.JPG" id = "myImg9">
+        <img src="Photos&Videos/wfall1.JPG" id = "myImg10">
+        <img src="Photos&Videos/wfall2.JPG" id = "myImg11">
+        <img src="Photos&Videos/XCMain.JPG" id = "myImg12">
+        <img src="Photos&Videos/TrackMain.JPG" id = "myImg13">
+
+
+
+        <div id="myModal" class="modal">
+            
+            <img class="modal-content" id="img" alt = "running">
+            <div class="modal-details">
+                <h2>Purchase Image</h2>
+                <form id="paymentForm">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="text" id="expiryDate" name="expiryDate" required>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                    <button type="button" onclick="processPayment()">Pay</button>
+                </form>
+                <div id="paymentMessage"></div>
+                <a id="downloadLink" style="display: none;" href="#" download>Download Image</a>
+            </div>
+            <button id="watermarkedDownload" onclick="downloadWatermarked()">Download Watermarked Image</button>
+            <span class="close">&times;</span>
+        </div>
+
+            <img class="modal-content" id="img2">
+            <img class="modal-content" id="img3">
+            <img class="modal-content" id="img4">
+            <img class="modal-content" id="img5">
+            <img class="modal-content" id="img6">
+            <img class="modal-content" id="img7">
+            <img class="modal-content" id="img8">
+            <img class="modal-content" id="img9">
+            <img class="modal-content" id="img10">
+            <img class="modal-content" id="img11">
+            <img class="modal-content" id="img12">
+            <img class="modal-content" id="img13">
+            <img class="modal-content" id="img14">
+            <img class="modal-content" id="img15">
+            <img class="modal-content" id="img16">
+            <img class="modal-content" id="img17">
+            <img class="modal-content" id="img18">
+            <img class="modal-content" id="img19">
+            <img class="modal-content" id="img20">
+            <img class="modal-content" id="img21">
+            <img class="modal-content" id="img22">
+            <img class="modal-content" id="img23">
+            <img class="modal-content" id="img24">
+            <img class="modal-content" id="img25">
+            <img class="modal-content" id="img26">
+            <img class="modal-content" id="img27">
+
+
+
+
+
+</div>
+
+          </div>
+    </div>
+
+    <script>
+
+
+
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var captionText = document.getElementById("caption");
+
+        //need this to recognize image being selected
+        var modalImg = document.getElementById("img");
+        var img15 = document.getElementById("myImg15");
+        var img16 = document.getElementById("myImg16");
+        var img17 = document.getElementById("myImg17");
+        var img18 = document.getElementById("myImg18");
+        var img19 = document.getElementById("myImg19");
+        var img20 = document.getElementById("myImg20");
+        var img21 = document.getElementById("myImg21");
+        var img22= document.getElementById("myImg22");
+        var img23 = document.getElementById("myImg23");
+        var img24 = document.getElementById("myImg24");
+        var img25 = document.getElementById("myImg25");
+        var img26 = document.getElementById("myImg26");
+        var img27 = document.getElementById("myImg27");
+
+
+        var img = document.getElementById("myImg1");
+        var img2 = document.getElementById("myImg2");
+        var img3 = document.getElementById("myImg3");
+        var img4 = document.getElementById("myImg4");
+        var img5 = document.getElementById("myImg5");
+        var img6 = document.getElementById("myImg6");
+        var img7 = document.getElementById("myImg7");
+        var img8 = document.getElementById("myImg8");
+        var img9 = document.getElementById("myImg9");
+        var img10 = document.getElementById("myImg10");
+        var img11 = document.getElementById("myImg11");
+        var img12 = document.getElementById("myImg12");
+        var img13 = document.getElementById("myImg13");
+        var img14 = document.getElementById("myImg14");
+
+        
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img5.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img6.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img7.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img8.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img9.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img10.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img11.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img12.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img13.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img14.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img15.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img16.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img17.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img18.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img19.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img20.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img21.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img22.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img23.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img24.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img25.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img26.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img27.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+
+        function downloadWatermarked() {
+            var watermarkedImage = modalImg.src.replace(".jpg", "_watermarked.jpg");
+            var link = document.createElement('a');
+            link.href = watermarkedImage;
+            link.download = 'watermarked_image.jpg';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        </script>
+
+</body>
+
+</html>

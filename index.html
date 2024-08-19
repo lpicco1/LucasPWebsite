@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styling.css">
+  <title>Lucas Picco Website</title>
+</head>
+
+
+
+
+<body>
+
+<!---This is the Navigation wiht my links--->
+
+<div class="topnav">
+  <a href="Photos.html"> Photos</a>
+  <a href="https://mkepanthers.com/sports/mens-cross-country/roster/lucas-picco/15834">XC</a>
+  <a href="https://mkepanthers.com/sports/mens-track-and-field/roster/lucas-picco/15497">Track & Field</a>
+  <a href="#">Piano</a>
+  <div class="topnavr">
+  <a href="index.html">Lucas Picco</a>
+  </div>
+</div>
+
+  <!---End of Navigation--->
+
+  <!---Background Img's--->
+ 
+  <div class="fixed-bg" id="section1"></div>
+  <div class="bg-text" id="text1">Lucas Picco  <div class="scrollw"></div><div class="scrolld"></div></div>
+
+
+  <div class="fixed-bg2" id="section2"></div>
+  <div class="bg-text" id="text2"> D1 XC & Track Athlete</div>
+
+  <div class="fixed-bg6" id="section6"></div>
+  <div class="bg-text" id="text6">Photographer</div>
+
+  <div class="fixed-bg5" id="section5"></div>
+  <div class="bg-text" id="text5">Pianist</div>
+
+  <div class="fixed-bg4" id="section4"></div>
+  <div class="bg-text" id="text4">Computer Science Undergraduate</div>
+
+  <div class="fixed-bg3" id="section3"></div>
+  <div class="bg-text" id="text3"><div class = "ABME"><p>About me</p></div></div>
+
+
+
+  
+<!---End of background video, needs to stay of content div class--->
+
+<!---Beginning of Text that is in Piano Background Video--->
+
+<!---End of Text that is in Piano Background Video--->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.fixed-bg, .fixed-bg2, .fixed-bg3, .fixed-bg4, .fixed-bg5, .fixed-bg6');
+      const texts = document.querySelectorAll('.bg-text');
+  
+      const options = {
+          root: null,
+          threshold: 0.4
+      };
+  
+      let observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              const textId = `text${entry.target.id.slice(-1)}`;
+              const textElement = document.getElementById(textId);
+  
+              if (entry.isIntersecting) {
+                  textElement.classList.remove('hidden');
+              } else {
+                  textElement.classList.add('hidden');
+              }
+          });
+      }, options);
+  
+      sections.forEach(section => {
+          observer.observe(section);
+      });
+  });
+  </script>
+
+
+</body>
+</html>
