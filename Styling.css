@@ -57,11 +57,11 @@ html, body {
   }
 
   .fixed-bg{
-    background-image: url("Photos&Videos/LAPSunsetfishing_hq_Original.JPG");
+    background-image: url("P&V1/LAPSunsetfishing_hq_Original.JPG");
     z-index: -1;
   }
   .fixed-bg2 {
-    background-image: url("Photos&Videos/XCMain.JPG");
+    background-image: url("P&V1/XCMain.JPG");
   }
   .fixed-bg3 { 
     background-image: url("Photos&Videos/Calpai.JPG");
